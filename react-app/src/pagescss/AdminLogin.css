@@ -1,0 +1,30 @@
+.admin-login-container {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error-message {
+    color: red;
+}
+
+.admin-login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+}
+
+.admin-input {
+    padding: 10px;
+}
+
+.admin-login-button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #e27b15;
+    color: white;
+    border: none;
+}

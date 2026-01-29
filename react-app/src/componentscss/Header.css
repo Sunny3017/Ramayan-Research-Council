@@ -1,0 +1,213 @@
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.join-team-bar {
+    height: 60px;
+    background: linear-gradient(90deg, #49263d, #8b4e5d);
+    color: #fff0e3;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 11000;
+    border-bottom: 1px solid #5a2e4b;
+}
+
+.marquee-container {
+    white-space: nowrap;
+    display: flex;
+    animation: marquee 15s linear infinite;
+    width: max-content;
+}
+
+.marquee-text {
+    padding-right: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Google Translate Overrides */
+.goog-te-banner-frame.skiptranslate { display: none !important; }
+iframe.goog-te-banner-frame { display: none !important; }
+body { top: 0px !important; position: static !important; }
+.goog-te-gadget-icon { display: none !important; }
+#google_translate_element { display: none !important; }
+.goog-tooltip { display: none !important; }
+.goog-te-gadget-simple { background-color: transparent !important; border: none !important; }
+.VIpgJd-ZVi9od-ORHb-OEVmcd { display: none !important; }
+#goog-gt-tt { display: none !important; visibility: hidden !important; }
+.goog-text-highlight { background: none !important; box-shadow: none !important; border: none !important; }
+font { background-color: transparent !important; box-shadow: none !important; }
+font:hover { background-color: transparent !important; box-shadow: none !important; }
+
+/* Custom Translate Popup */
+.custom-translate-popup {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 10000;
+    background-color: #fff;
+    padding: 12px 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 140px;
+}
+
+.custom-translate-popup.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.custom-translate-popup.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px) scale(0.9);
+}
+
+.lang-title {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 2px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.lang-btn-container {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.lang-btn {
+    border: 1px solid #eee;
+    background: #fff;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    transition: 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.lang-btn:hover {
+    background: #f9f9f9;
+}
+
+.lang-btn-primary {
+    border: none;
+    background: linear-gradient(135deg, #db4242 0%, #ff6b6b 100%);
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.2s;
+    box-shadow: 0 3px 8px rgba(219, 66, 66, 0.3);
+}
+
+.lang-btn-primary:hover {
+    transform: translateY(-1px);
+}
+
+.translate-close-btn {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_mobile_navbar .menu_open.menu-toggle-btn-custom {
+    z-index: 12000;
+    position: absolute;
+    top: 95px;
+}
+
+.submenu-list {
+    display: none;
+}
+
+.submenu-list.active {
+    display: block;
+}
+
+/* Ensure submenu works by overriding potentially conflicting styles */
+.header_mobile_navbar .nav_slidebar ul.menu_bar > li ul.submenu-list {
+    display: none;
+}
+
+.header_mobile_navbar .nav_slidebar ul.menu_bar > li ul.submenu-list.active {
+    display: block;
+}
+
+/* Fix z-index for mobile menu to be above the join-team-bar (11000) */
+.header_mobile_navbar .nav_slidebar {
+    z-index: 11500 !important;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767px) {
+    /* Join RRC Button */
+    .mobile-join-rrc-item {
+        padding: 0 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .mobile-join-rrc-btn {
+        display: inline-block;
+        text-align: center;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff !important;
+        background: #db4242;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 6px;
+        padding: 13px 40px;
+        width: auto;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+
+    .mobile-join-rrc-btn:hover {
+        background: #c13131;
+        transform: translateY(-2px);
+    }
+
+    /* Top Bar Adjustments */
+    .marquee-text {
+        font-size: 1rem;
+        padding-right: 20px;
+    }
+    
+    .join-team-bar {
+        height: 50px;
+    }
+
+    /* Adjust menu toggle button position for smaller top bar */
+    .header_mobile_navbar .menu_open.menu-toggle-btn-custom {
+        top: 85px;
+    }
+}

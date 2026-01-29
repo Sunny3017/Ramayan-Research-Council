@@ -1,0 +1,79 @@
+/* Divine Trishul Donate Button */
+.donate-shakti-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    padding: 16px 26px;
+    background: linear-gradient(135deg, #ff7a00, #ff4800);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid rgba(255, 224, 178, 0.95);
+    box-shadow: 0 0 18px rgba(255, 115, 0, 0.5),
+                inset 0 0 10px rgba(255, 204, 102, 0.3);
+    z-index: 9999;
+    transition: all 0.35s ease-in-out;
+    animation: saffronPulse 2.8s infinite ease-in-out;
+}
+
+/* Trishul Normal State */
+.trishul-icon {
+    font-size: 28px;
+    margin-right: 10px;
+    color: #fffdf1;
+    filter: drop-shadow(0 0 8px #ffcd75);
+    animation: trishulFloat 2.2s infinite ease-in-out;
+    transition: transform 0.45s ease, filter 0.45s ease;
+    display: inline-block;
+}
+
+/* Parent Hover → Smooth Rotate 90deg */
+.donate-shakti-btn:hover .trishul-icon {
+    animation: none !important;               /* Stop floating animation on hover */
+    transform: rotate(90deg) scale(1.2);      /* Smooth rotate */
+    filter: drop-shadow(0 0 14px #ffe4b2);
+}
+
+/* Text */
+.donate-text {
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff7e6;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* Button Hover Effects */
+.donate-shakti-btn:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #ffa000, #ff3d00);
+    box-shadow: 0 0 28px rgba(255, 120, 0, 0.8),
+                inset 0 0 14px rgba(255, 240, 200, 0.5);
+}
+
+/* Floating Animation */
+@keyframes trishulFloat {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+/* Glow Pulse */
+@keyframes saffronPulse {
+    0%   { box-shadow: 0 0 10px rgba(255, 130, 0, 0.4); }
+    50%  { box-shadow: 0 0 22px rgba(255, 160, 0, 0.7); }
+    100% { box-shadow: 0 0 10px rgba(255, 130, 0, 0.4); }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .donate-shakti-btn {
+        bottom: 20px;
+        left: 20px;
+        padding: 12px 18px;
+    }
+    .trishul-icon { font-size: 24px; }
+    .donate-text { font-size: 13px; }
+}

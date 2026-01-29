@@ -1,0 +1,106 @@
+.donate-container {
+    background-image: linear-gradient(to bottom, #ffefe2, #fff);
+    padding: 50px 0;
+}
+
+.donate-appeal {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.donate-heading {
+    color: #d35400;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.donate-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.donation-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.method-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-top: 5px solid #d35400;
+}
+
+.method-card-center {
+    text-align: center;
+}
+
+.method-heading {
+    color: #d35400;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.bank-details {
+    font-size: 1rem;
+    color: #444;
+}
+
+.bank-details-item {
+    margin-bottom: 10px;
+}
+
+.qr-placeholder {
+    width: 200px;
+    height: 200px;
+    background: #f0f0f0;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px dashed #ccc;
+}
+
+.qr-placeholder-text {
+    color: #888;
+}
+
+.qr-helper-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.contact-text {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-item {
+    margin-bottom: 10px;
+}
+
+.contact-link {
+    color: #d35400;
+}
+
+.tax-note {
+    margin-top: 20px;
+    background: #fff3e0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #d35400;
+}

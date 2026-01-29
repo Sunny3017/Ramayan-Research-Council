@@ -1,0 +1,121 @@
+.heading_banner {
+    width: 92%;
+    margin: auto;
+    padding: 50px;
+    height: 180px;
+    text-align: center;
+    background-image: linear-gradient(87deg, #fff -399%, #d1d1d1 957%),
+      url(../../../images/headingBanner.webp);
+    background-image: linear-gradient(
+        rgb(248 109 179 / 40%),
+        rgb(237 151 194 / 40%)
+      ),
+      url(../../images/headingBanner.webp);
+    background-size: cover;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    background-blend-mode: multiply;
+  }
+  
+  .heading_text {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #49263d;
+    text-transform: uppercase;
+  }
+
+.about_us_gallery {
+    background: linear-gradient(180deg, #ffefe2 17.31%, #ffffff 100%);
+    padding: 110px 120px;
+    text-align: center;
+  }
+
+  .president_wrapper {
+  display: flex;
+  align-items: flex-start; 
+  gap: 20px;
+}
+
+.president_wrapper img {
+  width: 500px;
+  height: auto;
+  object-fit: cover;      
+  display: block;
+}
+
+  
+  .text_container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .text_container .top_heading {
+    font-size: 16px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #db4242;
+  }
+  
+  .top_heading img {
+    height: 19px;
+    width: 18px;
+  }
+  
+  .name_text {
+    font-size: 38px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.32;
+    letter-spacing: normal;
+    text-align: left;
+    color: #49263d;
+  }
+  
+  .about_president {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    text-align: left;
+    color: #49263d;
+  }
+  
+  .about_president .read-more{
+    cursor: pointer;
+    font-weight: 600;
+    color: #db4242;
+  }
+  
+
+  @media (max-width: 767px){
+    .about_us_gallery{
+      padding: 40px 20px;
+    }
+    .president_wrapper{
+      display: block;
+    }
+     .president_wrapper img{
+        width: 100%;
+        margin: 0 0 15px;
+     }
+
+     .president_wrapper .top_heading img{
+      width: auto;
+     }
+  }

@@ -1,0 +1,127 @@
+
+.upper_input_footer {
+    padding: 80px;
+    background-image: 
+      linear-gradient(to bottom,  rgba(73, 38, 61,0.98), rgba(139, 77, 92, 0.90)),
+      url(../images/topFooterbg.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  
+  .upper_input_footer .gallery_text {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fd8f8f;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .upper_input_footer .gallery_text img {
+    height: 19px;
+    width: 18px;
+    color: #fd8f8f;
+  }
+
+  .upper_input_footer .heading {
+    font-size: 38px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.28;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff0e3;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    font-family: Poppins;
+    margin-top: 10px;
+  }
+  
+  .upper_input_footer .input_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .upper_input_footer .inputField {
+    width: 450px;
+    height: 60px;
+    padding: 20px;
+    border-radius: 60px;
+    border: solid 2px #a66b7c;
+    background-color: #8c4e5d;
+  }
+  
+  .upper_input_footer .inputField::placeholder {
+    color: #ffffff;
+  }
+  
+  .upper_input_footer .input_container .subscribe_btn {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #db4242;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #fff;
+  }
+
+  .main_footer {
+    background-color: #44233b;
+    padding: 30px 100px 60px 100px;
+  }
+  
+  .footer_content {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+  
+  .main_footer .heading {
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fd8f8f;
+  }
+  
+  .main_footer .content {
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff0e3;
+  }
+  .text_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }

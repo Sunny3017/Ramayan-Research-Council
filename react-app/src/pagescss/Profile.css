@@ -1,0 +1,85 @@
+.about_us_gallery {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.president_wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.president_wrapper img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.text_container {
+    flex: 1;
+}
+
+.top_heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: #d32f2f;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.top_heading img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    box-shadow: none;
+}
+
+.name_text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.about_president {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.read-more {
+    color: #d32f2f;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .president_wrapper {
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .president_wrapper img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}

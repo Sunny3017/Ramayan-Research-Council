@@ -1,0 +1,46 @@
+.join-team-container {
+    padding: 50px 0;
+    background: #fff;
+}
+
+.join-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.form-heading {
+    text-align: center;
+    color: #49263d;
+    margin-bottom: 30px;
+}
+
+.status-success {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.status-error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.form-label-custom {
+    color: #49263d;
+    font-weight: 500;
+}
+
+.submit-button {
+    background: #db4242;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+}
