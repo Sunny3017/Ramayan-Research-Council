@@ -1,0 +1,169 @@
+[33mcommit 36e35789755b33b69f7c459fcb40073213d3f3da[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Sunny3017 <sunnychaudhary3792@gmail.com>
+Date:   Thu Jan 29 18:09:21 2026 +0530
+
+    project updated
+
+M	backend/package-lock.json
+M	backend/package.json
+M	backend/server.js
+
+[33mcommit 439f0b6f325dfd7a099fab116bf6b2c5fe5cb476[m
+Author: Sunny3017 <sunnychaudhary3792@gmail.com>
+Date:   Thu Jan 29 16:50:11 2026 +0530
+
+    project updated
+
+A	.gitignore
+A	backend/cleanup_duplicates.js
+A	backend/config/db.js
+A	backend/config/imagekit.js
+A	backend/controllers/authController.js
+A	backend/controllers/galleryController.js
+A	backend/controllers/printMediaController.js
+A	backend/controllers/sliderController.js
+A	backend/controllers/volunteerController.js
+A	backend/middleware/auth.js
+A	backend/middleware/upload.js
+A	backend/models/Image.js
+A	backend/models/PrintMedia.js
+A	backend/models/Slider.js
+A	backend/models/Volunteer.js
+A	backend/package-lock.json
+A	backend/package.json
+A	backend/routes/authRoutes.js
+A	backend/routes/galleryRoutes.js
+A	backend/routes/printMediaRoutes.js
+A	backend/routes/sliderRoutes.js
+A	backend/routes/volunteerRoutes.js
+A	backend/scripts/seedPrintGallery.js
+A	backend/seed/seedGallery.js
+A	backend/server.js
+A	backend/utils/smsSender.js
+A	backend/verify_images.js
+A	react-app/.gitignore
+A	react-app/README.md
+A	react-app/eslint.config.js
+A	react-app/index.html
+A	react-app/package-lock.json
+A	react-app/package.json
+A	react-app/public/OurTeam images/Reasearch team/img1.png
+A	react-app/public/OurTeam images/Reasearch team/img10.png
+A	react-app/public/OurTeam images/Reasearch team/img2.png
+A	react-app/public/OurTeam images/Reasearch team/img3.png
+A	react-app/public/OurTeam images/Reasearch team/img4.png
+A	react-app/public/OurTeam images/Reasearch team/img5.jpg
+A	react-app/public/OurTeam images/Reasearch team/img6.png
+A	react-app/public/OurTeam images/Reasearch team/img7.png
+A	react-app/public/OurTeam images/Reasearch team/img8.png
+A	react-app/public/OurTeam images/Reasearch team/img9.png
+A	react-app/public/OurTeam images/Sant Mandal/img1.png
+A	react-app/public/OurTeam images/Sant Mandal/img10.png
+A	react-app/public/OurTeam images/Sant Mandal/img11.png
+A	react-app/public/OurTeam images/Sant Mandal/img2.jpg
+A	react-app/public/OurTeam images/Sant Mandal/img3.png
+A	react-app/public/OurTeam images/Sant Mandal/img4.png
+A	react-app/public/OurTeam images/Sant Mandal/img5.png
+A	react-app/public/OurTeam images/Sant Mandal/img6.png
+A	react-app/public/OurTeam images/Sant Mandal/img7.png
+A	react-app/public/OurTeam images/Sant Mandal/img8.png
+A	react-app/public/OurTeam images/Sant Mandal/img9.png
+A	react-app/public/OurTeam images/SitaShakti member/img1.png
+A	react-app/public/OurTeam images/SitaShakti member/img10.png
+A	react-app/public/OurTeam images/SitaShakti member/img2.png
+A	react-app/public/OurTeam images/SitaShakti member/img3.png
+A	react-app/public/OurTeam images/SitaShakti member/img4.png
+A	react-app/public/OurTeam images/SitaShakti member/img5.png
+A	react-app/public/OurTeam images/SitaShakti member/img6.png
+A	react-app/public/OurTeam images/SitaShakti member/img7.png
+A	react-app/public/OurTeam images/SitaShakti member/img8.png
+A	react-app/public/OurTeam images/SitaShakti member/img9.png
+A	react-app/public/OurTeam images/State team/img1.jpg
+A	react-app/public/OurTeam images/State team/img2.jpg
+A	react-app/public/OurTeam images/State team/img3.jpg
+A	react-app/public/OurTeam images/State team/img4.png
+A	react-app/public/OurTeam images/State team/img5.png
+A	react-app/public/OurTeam images/State team/img6.png
+A	react-app/public/OurTeam images/State team/img7.png
+A	react-app/public/OurTeam images/State team/img8.png
+A	react-app/public/OurTeam images/team member/Aditya-Jha.jpg
+A	react-app/public/OurTeam images/team member/amber-agrawal.jpg
+A	react-app/public/OurTeam images/team member/laxminarayan-bhala.jpg
+A	react-app/public/OurTeam images/team member/shivam-singh-ji.jpg
+A	react-app/public/OurTeam images/team member/team1.png
+A	react-app/public/OurTeam images/team member/team10.png
+A	react-app/public/OurTeam images/team member/team11.png
+A	react-app/public/OurTeam images/team member/team12.png
+A	react-app/public/OurTeam images/team member/team13.png
+A	react-app/public/OurTeam images/team member/team14.png
+A	react-app/public/OurTeam images/team member/team15.png
+A	react-app/public/OurTeam images/team member/team16.jpg
+A	react-app/public/OurTeam images/team member/team17.png
+A	react-app/public/OurTeam images/team member/team18.png
+A	react-app/public/OurTeam images/team member/team19.png
+A	react-app/public/OurTeam images/team member/team2.png
+A	react-app/public/OurTeam images/team member/team20.png
+A	react-app/public/OurTeam images/team member/team21.jpg
+A	react-app/public/OurTeam images/team member/team22.jpg
+A	react-app/public/OurTeam images/team member/team23.png
+A	react-app/public/OurTeam images/team member/team24.png
+A	react-app/public/OurTeam images/team member/team25.png
+A	react-app/public/OurTeam images/team member/team26.png
+A	react-app/public/OurTeam images/team member/team27.jpg
+A	react-app/public/OurTeam images/team member/team28.png
+A	react-app/public/OurTeam images/team member/team29.png
+A	react-app/public/OurTeam images/team member/team3.png
+A	react-app/public/OurTeam images/team member/team30.png
+A	react-app/public/OurTeam images/team member/team31.png
+A	react-app/public/OurTeam images/team member/team32.png
+A	react-app/public/OurTeam images/team member/team33.png
+A	react-app/public/OurTeam images/team member/team34.png
+A	react-app/public/OurTeam images/team member/team35.png
+A	react-app/public/OurTeam images/team member/team36.png
+A	react-app/public/OurTeam images/team member/team37.png
+A	react-app/public/OurTeam images/team member/team38.png
+A	react-app/public/OurTeam images/team member/team39.png
+A	react-app/public/OurTeam images/team member/team4.png
+A	react-app/public/OurTeam images/team member/team40.png
+A	react-app/public/OurTeam images/team member/team41.png
+A	react-app/public/OurTeam images/team member/team42.png
+A	react-app/public/OurTeam images/team member/team43.png
+A	react-app/public/OurTeam images/team member/team44.png
+A	react-app/public/OurTeam images/team member/team45.png
+A	react-app/public/OurTeam images/team member/team46.png
+A	react-app/public/OurTeam images/team member/team5.jpg
+A	react-app/public/OurTeam images/team member/team6.jpg
+A	react-app/public/OurTeam images/team member/team7.png
+A	react-app/public/OurTeam images/team member/team8.png
+A	react-app/public/OurTeam images/team member/team9.png
+A	react-app/public/OurTeam images/team member/vivek_sharma_ji.png
+A	"react-app/public/OurTeam images/team member/\340\244\266\340\245\215\340\244\260\340\245\200-\340\244\265\340\245\207\340\244\202\340\244\225\340\244\237-\340\244\260\340\245\207\340\244\241\340\245\215\340\244\241\340\245\200-\340\244\257\340\244\260\340\245\215\340\244\260\340\244\256-\340\244\234\340\245\200.jpg"
+A	react-app/public/abimages/Banner1.png
+A	react-app/public/abimages/arrow_icon.png
+A	react-app/public/abimages/avatar.png
+A	react-app/public/abimages/banner_sectionimg.png
+A	react-app/public/abimages/book_icon.png
+A	react-app/public/abimages/bow_icon.png
+A	react-app/public/abimages/calender.png
+A	react-app/public/abimages/convenor.jpg
+A	react-app/public/abimages/dugra_pic.png
+A	react-app/public/abimages/fb_icon.png
+A	react-app/public/abimages/generalsecretary.jpg
+A	react-app/public/abimages/god_pic1.png
+A	react-app/public/abimages/headingBanner.webp
+A	react-app/public/abimages/image 6.png
+A	react-app/public/abimages/image 7.png
+A	react-app/public/abimages/instagram_icon.png
+A	react-app/public/abimages/janki_pic.png
+A	react-app/public/abimages/list_icon.png
+A	react-app/public/abimages/logo.png
+A	react-app/public/abimages/map.png
+A	react-app/public/abimages/monk_pic1.png
+A	react-app/public/abimages/om_icon.png
+A	react-app/public/abimages/om_light.webp
+A	react-app/public/abimages/presidentImg.jpg
+A	react-app/public/abimages/qutes.png
+A	react-app/public/abimages/secondImg.webp
+A	react-app/public/abimages/sitaMa_pic.png
+A	react-app/public/abimages/slider_arrow.png
+A	react-app/public/abima

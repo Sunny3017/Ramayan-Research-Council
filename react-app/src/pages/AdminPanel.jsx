@@ -30,16 +30,17 @@ const AdminPanel = () => {
 
     const fetchData = async () => {
         try {
+            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
             if (activeTab === 'volunteers') {
-                const response = await fetch('http://localhost:5000/api/volunteer', {
+                const response = await fetch(`${apiUrl}/api/volunteer`, {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 const data = await response.json();
                 setVolunteers(data);
             } else {
-                let endpoint = 'http://localhost:5000/api/gallery';
-                if (activeTab === 'slider') endpoint = 'http://localhost:5000/api/slider';
-                if (activeTab === 'print') endpoint = 'http://localhost:5000/api/print-media';
+                let endpoint = `${apiUrl}/api/gallery`;
+                if (activeTab === 'slider') endpoint = `${apiUrl}/api/slider`;
+                if (activeTab === 'print') endpoint = `${apiUrl}/api/print-media`;
                 
                 const response = await fetch(endpoint);
                 const data = await response.json();

@@ -9,6 +9,7 @@ const getImages = async (req, res) => {
         const images = await Image.find().sort({ createdAt: -1 });
         res.json(images);
     } catch (error) {
+        console.error('Error in getImages:', error);
         res.status(500).json({ message: error.message });
     }
 };

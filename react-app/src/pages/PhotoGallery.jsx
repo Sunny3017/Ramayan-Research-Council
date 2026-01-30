@@ -15,19 +15,20 @@ const PhotoGallery = () => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      try {
-        const response = await fetch('http://localhost:5000/api/gallery');
-        const data = await response.json();
-        const formattedImages = data.map(img => ({
-          src: img.url,
-          title: img.description
-        }));
-        setGalleryImages(formattedImages);
-        setVisibleImages(formattedImages.slice(0, 50));
-      } catch (error) {
-        console.error('Error fetching images:', error);
-      }
-    };
+    try {
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const response = await fetch(`${apiUrl}/api/gallery`);
+      const data = await response.json();
+      const formattedImages = data.map(img => ({
+        src: img.url,
+        title: img.description
+      }));
+      setGalleryImages(formattedImages);
+      setVisibleImages(formattedImages.slice(0, 50));
+    } catch (error) {
+      console.error('Error fetching images:', error);
+    }
+  };
 
     fetchImages();
   }, []);
