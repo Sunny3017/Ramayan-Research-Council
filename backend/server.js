@@ -27,7 +27,7 @@ const app = express();
 app.use(helmet());
 
 // CORS Configuration: Allow production domain and localhost
-const allowedOrigins = ['https://www.ramayanresearchcouncil.com', 'https://ramayan-research-council.onrender.com', 'http://localhost:5173', 'http://localhost:3000', 'http://localhost:5000'];
+const allowedOrigins = ['https://www.ramayanresearchcouncil.com', 'https://ramayan-research-council.onrender.com', 'http://localhost:5173', 'http://localhost:5174', 'http://localhost:3000', 'http://localhost:5000'];
 const corsOptions = {
     origin: function (origin, callback) {
         if (!origin || allowedOrigins.indexOf(origin) !== -1) {

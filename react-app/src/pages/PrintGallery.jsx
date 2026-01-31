@@ -12,12 +12,13 @@ const PrintGallery = () => {
   useEffect(() => {
     const fetchPrintMedia = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/print-media');
+        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        const response = await fetch(`${apiUrl}/api/print-media`);
         const data = await response.json();
         // Backend returns items sorted by createdAt desc by default, 
         // but if we want to preserve specific order or just trust the backend sort.
         // The seed script inserted them in order, but async uploads might have shuffled them slightly if parallel, 
-        // but wait, seed script used `for (const item of printNewsData)` with `await`, so insertion order is preserved.
+        // but wait, seed script used `for (const item of printN    ewsData)` with `await`, so insertion order is preserved.
         // However, `find().sort({ createdAt: -1 })` reverses that order.
         // The original array was in a specific display order. If I want that same order (top to bottom), 
         // and I inserted 1, 2, 3... 

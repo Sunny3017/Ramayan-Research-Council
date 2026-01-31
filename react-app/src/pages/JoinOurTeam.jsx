@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import '../pagescss/JoinOurTeam.css';
+import API_BASE_URL from '../config';
 
 const JoinOurTeam = () => {
     const [formData, setFormData] = useState({
@@ -27,8 +28,7 @@ const JoinOurTeam = () => {
         setStatus('sending');
 
         try {
-            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-            const response = await fetch(`${apiUrl}/api/volunteer`, {
+            const response = await fetch(`${API_BASE_URL}/api/volunteer`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

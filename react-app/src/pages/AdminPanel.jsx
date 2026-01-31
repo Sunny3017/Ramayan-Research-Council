@@ -71,9 +71,10 @@ const AdminPanel = () => {
         }
 
         try {
-            let endpoint = 'http://localhost:5000/api/gallery/upload';
-            if (activeTab === 'slider') endpoint = 'http://localhost:5000/api/slider/upload';
-            if (activeTab === 'print') endpoint = 'http://localhost:5000/api/print-media/upload';
+            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+            let endpoint = `${apiUrl}/api/gallery/upload`;
+            if (activeTab === 'slider') endpoint = `${apiUrl}/api/slider/upload`;
+            if (activeTab === 'print') endpoint = `${apiUrl}/api/print-media/upload`;
 
             const response = await fetch(endpoint, {
                 method: 'POST',

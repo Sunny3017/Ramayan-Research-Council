@@ -211,7 +211,7 @@ const TeamMember = () => {
                 </div>
 
                 <div className={`card ${showMore ? '' : 'hidden'}`}>
-                    <img src="/OurTeam images/team member/श्री-वेंकट-रेड्डी-यर्रम-जी.jpg" alt="Card Image 6" />
+                    <img src="/OurTeam images/team member/shri-venkat-reddy-yarram-ji.jpg" alt="Card Image 6" />
                     <h3>श्श्री वेंकट रेड्डी यर्रम जी</h3>
                     <div className="line"></div>
                     <p className="description">समन्वयक, दक्षिण भारत</p>

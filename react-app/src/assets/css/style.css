@@ -1642,7 +1642,7 @@ header .header_container .header_bar .join_rcc a {
 }
 .iu-section::after {
     right: 0;
-    background-image: url('right-mandala.png'); /* Replace with your right mandala image */
+/* background-image: url('right-mandala.png'); Replace with your right mandala image */
 }
 
 /* ===== CONTENT CONTAINER ===== */
