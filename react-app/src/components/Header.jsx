@@ -99,11 +99,16 @@ const Header = () => {
             >
                 <div className="marquee-container">
                     <div className="marquee-text">
-                        परिवार का हिस्सा बने • रामायण रिसर्च काउंसिल के साथ मिलकर धर्म और राष्ट्र की सेवा करें 
+                        रामायण रिसर्च काउंसिल परिवार का हिस्सा बने
                     </div>
                     <div className="marquee-text">
-                        परिवार का हिस्सा बने • रामायण रिसर्च काउंसिल के साथ मिलकर धर्म और राष्ट्र की सेवा करें 
+                        रामायण रिसर्च काउंसिल परिवार का हिस्सा बने
                     </div>
+                    <div className="marquee-text">
+                        रामायण रिसर्च काउंसिल परिवार का हिस्सा बने
+                    </div>
+                    
+
                 </div>
             </div>
 
@@ -157,7 +162,7 @@ const Header = () => {
                             </div>
                             <div className="nav_logo">
                                 <ul className="hidden_mobile">
-                                    <li><a href="#">हमारे बारे में</a>
+                                    <li><a href="#/about-us">हमारे बारे में</a>
                                         <ul>
                                             <li><Link to="/about-us">सीतामढ़ी में काउंसिल का संकल्प</Link></li>
                                             <li><Link to="/about-us">काउंसिल के बारे में</Link></li>

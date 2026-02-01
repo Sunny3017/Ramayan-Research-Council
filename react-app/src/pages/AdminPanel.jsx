@@ -107,9 +107,10 @@ const AdminPanel = () => {
         if (!window.confirm('Are you sure you want to delete this item?')) return;
 
         try {
-            let endpoint = `http://localhost:5000/api/gallery/${id}`;
-            if (activeTab === 'slider') endpoint = `http://localhost:5000/api/slider/${id}`;
-            if (activeTab === 'print') endpoint = `http://localhost:5000/api/print-media/${id}`;
+            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+            let endpoint = `${apiUrl}/api/gallery/${id}`;
+            if (activeTab === 'slider') endpoint = `${apiUrl}/api/slider/${id}`;
+            if (activeTab === 'print') endpoint = `${apiUrl}/api/print-media/${id}`;
 
             const response = await fetch(endpoint, {
                 method: 'DELETE',
@@ -142,7 +143,8 @@ const AdminPanel = () => {
         if (activeTab !== 'gallery') return; 
 
         try {
-            const response = await fetch(`http://localhost:5000/api/gallery/${id}`, {
+            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+            const response = await fetch(`${apiUrl}/api/gallery/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

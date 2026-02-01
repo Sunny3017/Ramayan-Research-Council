@@ -4,6 +4,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .container {
   max-width: 1340px;
   margin: 0 auto;
@@ -12,6 +17,24 @@
 
 header {
   background: #49263d;
+  position: relative;
+  z-index: 10000;
+  overflow: visible !important;
+  height: auto !important;
+}
+
+header .header_container,
+header .header_bar,
+header .nav_logo,
+header .nav_logo ul,
+header .nav_logo ul li,
+header .container,
+header .container-fluid,
+header .row,
+header .top_bar,
+header .top_bar .container {
+  overflow: visible !important;
+  max-height: none !important;
 }
 
 header .top_bar {
@@ -112,17 +135,28 @@ header .header_container .header_bar .nav_logo>ul>li {
 
 header .header_container .header_bar .nav_logo ul li ul {
   display: none;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
   background-color: #44233b;
   position: absolute;
-  z-index: 10;
+  top: 100%;
+  z-index: 999999 !important;
   padding: 15px 0;
   left: 0;
   width: 210px;
+  border-top: 3px solid #fd8f8f;
+  border-radius: 0 0 8px 8px;
+  max-height: none !important;
+  overflow: visible !important;
 }
 
 header .header_container .header_bar .nav_logo ul li:hover ul {
   display: block;
+}
+
+/* Fix for right-side menu items going off-screen */
+header .header_container .header_bar .nav_logo ul:last-of-type li:nth-last-child(-n+2) ul {
+    left: auto;
+    right: 0;
 }
 
 
@@ -152,6 +186,8 @@ header .header_container .header_bar .join_rcc a {
 
 .banner_area {
   background: linear-gradient(180deg, #49263d 17.31%, #8b4e5d 100%);
+  position: relative;
+  z-index: 1;
 }
 
 .banner_area .banner_slider {
@@ -1135,6 +1171,9 @@ header .header_container .header_bar .join_rcc a {
     z-index: 100;
     transform: translate(-100%, 0);
     transition: 0.2s all;
+    padding-left: 15px;
+    padding-right: 15px;
+    
   }
 
   .header_mobile_navbar .nav_slidebar ul {
@@ -1638,7 +1677,7 @@ header .header_container .header_bar .join_rcc a {
 }
 .iu-section::before {
     left: 0;
-    background-image: url('left-mandala.png'); /* Replace with your left mandala image */
+    /* background-image: url('left-mandala.png'); Replace with your left mandala image */
 }
 .iu-section::after {
     right: 0;

@@ -154,6 +154,7 @@ font:hover { background-color: transparent !important; box-shadow: none !importa
 
 /* Ensure submenu works by overriding potentially conflicting styles */
 .header_mobile_navbar .nav_slidebar ul.menu_bar > li ul.submenu-list {
+   
     display: none;
 }
 
@@ -169,7 +170,7 @@ font:hover { background-color: transparent !important; box-shadow: none !importa
 /* Mobile Responsive Styles */
 @media (max-width: 767px) {
     /* Join RRC Button */
-    .mobile-join-rrc-item {
+    .mobile-join-rrc-item { 
         padding: 0 20px;
         margin-top: 20px;
         margin-bottom: 30px;
@@ -208,7 +209,21 @@ font:hover { background-color: transparent !important; box-shadow: none !importa
 
     /* Adjust menu toggle button position for smaller top bar */
     .header_mobile_navbar .menu_open.menu-toggle-btn-custom {
-        top: 85px;
+        top: 65px;
+    }
+
+    .header_mobile_navbar .menu_open.menu-toggle-btn-custom.active {
+        position: fixed !important; /* Force fixed position */
+        top: 25px; /* Adjust cross button for mobile */
+        right: 20px;
+        z-index: 12000 !important; /* Ensure it stays on top */
+    }
+
+    /* Ensure mobile menu container scrolls independently */
+    .header_mobile_navbar .nav_slidebar {
+        overflow-y: auto !important;
+        overscroll-behavior: contain; /* Prevent body scroll chaining */
+        padding-bottom: 50px;
     }
 
     /* Mobile Menu Link Styles */
